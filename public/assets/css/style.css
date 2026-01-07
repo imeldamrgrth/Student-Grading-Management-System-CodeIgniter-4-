@@ -1,0 +1,108 @@
+/* Background buram dan berwarna */
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background: url('/assets/images/campus1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: auto; /* Menambahkan ini untuk memungkinkan scroll */
+    padding-top: 70px; /* Sesuaikan dengan tinggi navbar */
+}
+
+/* Efek buram pada background */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    z-index: -2; /* Pastikan di belakang konten */
+}
+
+/* Overlay warna dengan transparansi */
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Pastikan di depan background buram */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #eabdf4; /* Warna biru */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tambahkan shadow */
+    border-bottom: 0.5px solid #292929; /* Garis bawah sebagai aksen */
+}
+
+/* Styling untuk brand */
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Styling untuk nav-link */
+/* Styling untuk nav-link */
+.navbar-nav .nav-link {
+    color: black; /* Warna teks hitam */
+    font-size: 1.1rem;
+    margin-left: 15px;
+    transition: color 0.3s, transform 0.3s;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.7); /* Tambahkan shadow untuk efek menyala */
+}
+
+/* Efek hover untuk nav-link */
+.navbar-nav .nav-link:hover {
+    color: #292929; /* Warna lebih gelap saat hover */
+    transform: scale(1.1); /* Sedikit membesar saat hover */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Tambahkan shadow lebih kuat saat hover */
+}
+
+/* Responsive styling */
+.navbar-toggler {
+    border: none; /* Hilangkan border */
+}
+
+.navbar-toggler-icon {
+    background-color: white; /* Warna ikon toggler */
+    border-radius: 2px;
+}
+
+/* Aktifkan shadow saat scroll */
+.navbar.fixed-top.scrolled {
+    background-color: #f8fbff; /* Warna lebih gelap saat scroll */
+    transition: background-color 0.3s;
+}
+
+/* Menambahkan efek transparansi pada background card */
+.card {
+    background-color: rgba(255, 255, 255, 0.8); /* White dengan transparansi 80% */
+    border: none; /* Menghilangkan border default card */
+    border-radius: 10px; /* Menambahkan border-radius agar lebih halus */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek shadow ringan */
+}
+
+/* Mengatur jarak antar card */
+.card.mb-4, .card.mb-5 {
+    margin-bottom: 20px;
+}
+
+/* Menambahkan padding dan membuat seluruh card menyatu */
+.container.py-5 {
+    background-color: rgba(0, 0, 0, 0.2); /* Memberikan sedikit transparansi pada background container */
+    border-radius: 10px; /* Agar sudut container lebih halus */
+    padding: 30px;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
