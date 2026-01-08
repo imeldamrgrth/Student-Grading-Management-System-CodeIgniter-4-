@@ -5,9 +5,6 @@ A simple web-based application built using CodeIgniter 4 to manage student acade
 This system allows users to input, calculate, update, and manage student scores, including
 final grades and pass/fail status, using a structured MVC architecture.
 
-This project was developed as part of an academic assignment to demonstrate
-CRUD functionality and backend logic implementation using a PHP framework.
-
 ---
 
 ## Features
