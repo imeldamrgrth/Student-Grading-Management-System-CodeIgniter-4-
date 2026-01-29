@@ -57,11 +57,7 @@ database.default.port = 3306
 4. Run the project using a local server (XAMPP, Laragon, or similar)
 5. Access the application via `http://localhost:8080`
 
----
 
-## Notes
-This project was developed as an academic assignment to demonstrate
-CRUD operations and MVC architecture using CodeIgniter 4.
 
 
 
